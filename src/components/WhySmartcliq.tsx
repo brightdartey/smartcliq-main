@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { BENEFITS_LIST, STATS_DATA } from "@/lib/constants";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 const WhySmartcliq = () => {
   return (
@@ -12,45 +13,52 @@ const WhySmartcliq = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
-              Why Smartcliq
-            </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Built for Startups.{" "}
-              <span className="text-gradient">Designed for Scale.</span>
-            </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              We partner with you like an in-house growth team—not just another agency.
-            </p>
+            <ScrollReveal>
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+                Why Smartcliq
+              </span>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Built for Startups.{" "}
+                <span className="text-gradient">Designed for Scale.</span>
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <p className="text-muted-foreground text-lg mb-8">
+                We partner with you like an in-house growth team—not just another agency.
+              </p>
+            </ScrollReveal>
 
             {/* Benefits List */}
             <ul className="space-y-4">
               {BENEFITS_LIST.map((benefit, index) => (
-                <li 
-                  key={index}
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                    <Check className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="text-foreground font-medium">{benefit}</span>
-                </li>
+                <ScrollReveal key={index} delay={300 + index * 100}>
+                  <li 
+                    className="flex items-center gap-4 group"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <Check className="w-4 h-4 text-primary" />
+                    </div>
+                    <span className="text-foreground font-medium">{benefit}</span>
+                  </li>
+                </ScrollReveal>
               ))}
             </ul>
           </div>
 
           {/* Right Visual */}
           <div className="relative">
-            <div className="relative z-10 p-8 rounded-2xl border border-border bg-card">
+            <ScrollReveal delay={200} className="relative z-10 p-8 rounded-2xl border border-border bg-card shadow-2xl">
               <div className="grid grid-cols-2 gap-6">
                 {STATS_DATA.map((stat, i) => (
-                  <div key={i} className="text-center p-6 rounded-xl bg-secondary/50">
+                  <div key={i} className="text-center p-6 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors duration-300">
                     <div className="text-4xl font-display font-bold text-gradient mb-2">{stat.value}</div>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </div>
                 ))}
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
