@@ -24,7 +24,7 @@ const FinalCTA = () => {
           </p>
 
           <Button variant="hero" size="xl" className="animate-pulse-glow" asChild>
-            <a href="#contact">
+            <a href="https://calendly.com/bright-a-dartey/30min" target="_blank" rel="noopener noreferrer">
               Book a Consultation Now
               <ArrowRight className="w-5 h-5" />
             </a>

@@ -19,7 +19,7 @@ import {
 import { WhatsAppIcon } from "@/components/icons";
 
 export const CONTACT_INFO = {
-  email: "smartcliq@gmail.com",
+  email: " smartcliqdigital@gmail.com",
   phone: "+233 55 152 2385",
   phoneRaw: "+233551522385", // For tel: links
   address: "Accra, Ghana & Global",
@@ -28,8 +28,8 @@ export const CONTACT_INFO = {
 };
 
 export const SOCIAL_LINKS = [
-  { icon: Twitter, label: "X", href: "https://x.com/smartcliq" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/company/smartcliq" },
+  { icon: Twitter, label: "X", href: ": https://x.com/smartcliq_?t=7Dq-2mxgbS5jG6x0HW-Hog&s=08" },
+  { icon: Linkedin, label: "LinkedIn", href: " https://www.linkedin.com/company/smart-cliq" },
   { icon: Facebook, label: "Facebook", href: "https://facebook.com/smartcliq" },
   { icon: WhatsAppIcon, label: "WhatsApp", href: "https://wa.me/233551522385" },
 ];

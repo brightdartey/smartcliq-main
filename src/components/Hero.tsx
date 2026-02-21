@@ -48,7 +48,7 @@ const Hero = () => {
           animationDelay: '0.3s'
         }}>
             <Button variant="hero" size="xl" asChild>
-              <a href="#contact">
+              <a href="https://calendly.com/bright-a-dartey/30min" target="_blank" rel="noopener noreferrer">
                 Get a Strategy Call
                 <ArrowRight className="w-5 h-5" />
               </a>

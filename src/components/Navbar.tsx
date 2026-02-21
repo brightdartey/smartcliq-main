@@ -33,7 +33,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <Button variant="hero" size="default" className="hidden md:inline-flex" asChild>
-            <a href="#contact">Get Started</a>
+            <a href="https://calendly.com/bright-a-dartey/30min" target="_blank" rel="noopener noreferrer">Get Started</a>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -49,7 +49,7 @@ const Navbar = () => {
                   {link.label}
                 </a>)}
               <Button variant="hero" size="default" className="mt-4 w-full" asChild>
-                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Get Started</a>
+                <a href="https://calendly.com/bright-a-dartey/30min" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>Get Started</a>
               </Button>
             </nav>
           </div>}
