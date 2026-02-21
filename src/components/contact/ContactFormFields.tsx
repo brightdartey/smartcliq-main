@@ -99,7 +99,7 @@ export const ContactFormFields = () => {
                     <FormItem>
                     <FormLabel>Full Name</FormLabel>
                     <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="Full Name" {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
@@ -113,7 +113,7 @@ export const ContactFormFields = () => {
                     <FormItem>
                     <FormLabel>Email Address</FormLabel>
                     <FormControl>
-                        <Input type="email" placeholder="john@example.com" {...field} />
+                        <Input type="email" placeholder="Email Address" {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
@@ -129,7 +129,7 @@ export const ContactFormFields = () => {
                     <FormItem>
                     <FormLabel>Company Name</FormLabel>
                     <FormControl>
-                        <Input placeholder="Optional" {...field} />
+                        <Input placeholder="Company Name" {...field} />
                     </FormControl>
                     <FormMessage />
                     </FormItem>
@@ -170,7 +170,7 @@ export const ContactFormFields = () => {
                     <FormLabel>Tell us more</FormLabel>
                     <FormControl>
                     <Textarea
-                        placeholder="Project details, timeline, budget..."
+                        placeholder="Tell us more about your project"
                         className="min-h-[120px]"
                         {...field}
                     />
