@@ -1,5 +1,4 @@
 import { 
-  Twitter, 
   Linkedin, 
   Instagram, 
   Facebook, 
@@ -16,7 +15,7 @@ import {
   Zap
 } from "lucide-react";
 
-import { WhatsAppIcon } from "@/components/icons";
+import { WhatsAppIcon, XIcon } from "@/components/icons";
 
 export const CONTACT_INFO = {
   email: " smartcliqdigital@gmail.com",
@@ -28,7 +27,7 @@ export const CONTACT_INFO = {
 };
 
 export const SOCIAL_LINKS = [
-  { icon: Twitter, label: "X", href: ": https://x.com/smartcliq_?t=7Dq-2mxgbS5jG6x0HW-Hog&s=08" },
+  { icon: XIcon, label: "X", href: "https://x.com/smartcliq_?t=7Dq-2mxgbS5jG6x0HW-Hog&s=08" },
   { icon: Linkedin, label: "LinkedIn", href: " https://www.linkedin.com/company/smart-cliq" },
   { icon: Facebook, label: "Facebook", href: "https://facebook.com/smartcliq" },
   { icon: WhatsAppIcon, label: "WhatsApp", href: "https://wa.me/233551522385" },
