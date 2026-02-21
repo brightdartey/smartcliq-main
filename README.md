@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
+# SmartCliQ - Digital Growth Agency
 
-## Project info
+A high-performance, conversion-focused website built for digital agencies. Designed to be fast, responsive, and easy to customize.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![SmartCliQ Preview](public/og-image.png)
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Modern & Responsive:** Fully mobile-first design that looks great on all devices.
+- **Dark/Light Mode:** Built-in theme toggle with persistent user preference.
+- **Modular Content:** Update text, links, and data in **one file** (`src/lib/constants.ts`) without touching complex code.
+- **High Performance:** Built with Vite and React for instant loading speeds.
+- **Professional UI:** Styled with Tailwind CSS and Shadcn/UI components.
+- **SEO Ready:** Semantic HTML structure and optimized meta tags.
 
-**Use Lovable**
+## 🛠 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Framework:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Components:** [shadcn/ui](https://ui.shadcn.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** CSS Keyframes + Utility classes
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Ensure you have Node.js (v18+) installed on your machine.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/smartcliq.git
+   cd smartcliq
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📝 Customization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+This project is architected for easy content updates. You don't need to dig into React components to change text or links.
+
+### The "Command Center" (`src/lib/constants.ts`)
+
+Navigate to `src/lib/constants.ts`. This file controls:
+
+- **Contact Info:** Phone numbers, email, address.
+- **Social Links:** WhatsApp, LinkedIn, Facebook, X (Twitter).
+- **Navigation:** Menu items in the Navbar and Footer.
+- **Services:** All services cards (Icons, Titles, Descriptions).
+- **Stats:** The numbers shown in the "Why Us" section.
+
+**Example:**
+To change your phone number on the entire site:
+```typescript
+// src/lib/constants.ts
+export const CONTACT_INFO = {
+  phone: "+233 55 152 2385", // Update this line
+  // ...
+};
 ```
 
-**Edit a file directly in GitHub**
+## 📂 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── components/         # React components
+│   ├── contact/        # Contact form specifics
+│   ├── ui/             # Reusable UI elements (Buttons, Inputs)
+│   ├── Hero.tsx        # Hero Section
+│   ├── Navbar.tsx      # Navigation Bar
+│   └── Footer.tsx      # Footer
+├── lib/
+│   ├── constants.ts    # ⚡ SOURCE OF TRUTH (Edit content here)
+│   └── utils.ts        # Helper functions
+├── pages/              # Route pages (Index, NotFound)
+└── index.css           # Global styles & Tailwind directives
+```
 
-**Use GitHub Codespaces**
+## 📄 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is open source and available under the [MIT License](LICENSE).
